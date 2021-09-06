@@ -1,5 +1,5 @@
 const express= require('express');
-
+const PORT = proces.env.PORT || 3001;
 const app = express ();
 //1.creating a route that the front edn can request data from . 
 const { notes } = require('./develop/db/db.json');
@@ -14,6 +14,6 @@ app.get('/api/notes', (req,res) =>{
 });
 
 
-app.listen(3001, () => {
-    console.log(`API server now on port 3001!`);
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
   });
