@@ -2,7 +2,7 @@ const express= require('express');
 const PORT = process.env.PORT || 3001;
 const app = express ();
 //1.creating a route that the front edn can request data from . 
-const { notes } = require('./develop/db/db.json');
+const { notes } = require('./db/db.json');
 
 
 
