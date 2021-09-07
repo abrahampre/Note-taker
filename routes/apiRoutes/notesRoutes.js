@@ -1,4 +1,4 @@
-const {createNewNote} = require('../../lib/notes')
+const {createNewNote, validatNote} = require('../../lib/notes')
 const { notes } = require('../../db/db.json')
 const router = require('express').Router();
 
